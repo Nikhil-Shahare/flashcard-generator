@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 function AddTerm() {
-  return() 
-  <div>
-    hello
-  </div>);
+  const [value, setValue] = useState([
+    { Eterm: "", Edescription: "", addImage: "" },
+  ]);
+  return (
+    <div>
+      <form>
+        <input></input>
+      </form>
+    </div>
+  );
 }
 export default AddTerm;
