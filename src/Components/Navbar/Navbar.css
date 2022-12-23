@@ -1,0 +1,22 @@
+#Navbar a {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 0.25px;
+}
+#Navbar a:hover {
+  color: red;
+}
+
+#Navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  height: 4px;
+  width: 0px;
+  left: -10px;
+  bottom: -9px;
+  transition: 0.5s;
+}
+#Navbar a:hover::after {
+  width: 125%;
+}
